@@ -12,3 +12,9 @@
 \n 表示换行
 \t 表示一个制表符
 \\ 表示 \ 字符本身
+
+5、删除空白：
+(1)删除尾部的空白：例：language='python '永久删除尾部的空白:language=language.rstrip()
+(2)删除开头的空白：例：language=' python'永久删除开头的空白:language=language.lstrip()
+(3)删除两端的空白：例：language=' python '永久删除两端的空白:langage=language.strip()
+
