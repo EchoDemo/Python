@@ -27,7 +27,9 @@ L.pop()
 print L
 L.pop(1)
 print L
+del L[1] #删除指定位置的元素。
+L.remove('Adam') #根据元素值删除元素。
 
 #6、对list中的某一个索引赋值，就可以直接用新的元素替换掉原来的元素，list包含的元素个数保持不变。
-L[2] = 'Paul'
+L[0] = 'Paul'
 print L
