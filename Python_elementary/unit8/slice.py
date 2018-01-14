@@ -26,3 +26,9 @@ def firstCharUpper(s):
 print firstCharUpper('hello')
 print firstCharUpper('sunday')
 print firstCharUpper('september')
+
+
+#4、复制列表：
+L = ['Adam', 'Lisa', 'Bart', 'Paul']
+M=L[:] #创建了一个副本给M，此后它们便没有关联。
+N=L #这是让两个变量都同时指向同一个列表，无论谁发生变化，列表都将发生变化。
