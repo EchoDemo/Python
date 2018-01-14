@@ -33,3 +33,24 @@ L.remove('Adam') #根据元素值删除元素。且只删除第一个指定的�
 #6、对list中的某一个索引赋值，就可以直接用新的元素替换掉原来的元素，list包含的元素个数保持不变。
 L[0] = 'Paul'
 print L
+
+#coding:utf-8
+
+#7、使用range()创建数字列表：
+numbers=list(range(1,6))
+print(numbers)
+
+even_numbers=list(range(2,11,2)) #打印1~10内的偶数
+print(even_numbers)
+
+squares=[]
+for x in range(1,11):
+	square=x**2
+	squares.append(square)
+print(squares)
+
+#8、统计数字列表；
+print(min(squares))
+print(max(squares))
+print(sum(squares))
+
