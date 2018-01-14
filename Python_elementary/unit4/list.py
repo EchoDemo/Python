@@ -34,8 +34,6 @@ L.remove('Adam') #根据元素值删除元素。且只删除第一个指定的�
 L[0] = 'Paul'
 print L
 
-#coding:utf-8
-
 #7、使用range()创建数字列表：
 numbers=list(range(1,6))
 print(numbers)
