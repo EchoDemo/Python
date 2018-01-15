@@ -68,3 +68,22 @@ print(alien)
 #7、删除键值对：
 del alien['points']
 print(alien)
+
+
+#8、遍历所有的键值对：
+user={
+	'username':'efermi',
+	'first':'enrico',
+	'last':'fermi',
+}
+for key,value in user.items():
+	print("\nkey:"+key)
+	print("value:"+value)
+
+
+#9、遍历所有的键：
+for key in user.keys():
+	print(key.title())
+
+for key in user:
+	print(key.title())
