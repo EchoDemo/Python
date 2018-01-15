@@ -87,3 +87,16 @@ for key in user.keys():
 
 for key in user:
 	print(key.title())
+
+	
+#10、按顺序遍历字典中的所有键：
+for key in sorted(user.keys()):
+	print(key.title())
+
+
+#11、遍历字典中的所有值：
+for value in user.values():
+	print(value.title())
+#能够去掉重复值；
+for value in set(user.values()):
+	print(value.title())
