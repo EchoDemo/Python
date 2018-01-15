@@ -55,3 +55,16 @@ print d
 #5、遍历dict
 for key in d:
 	print key,':',d[key]
+
+	
+#6、添加键值对：
+alien={'color':'green','points':5}
+print(alien)
+alien['x_position']=0
+alien['y_position']=25
+print(alien)
+
+
+#7、删除键值对：
+del alien['points']
+print(alien)
