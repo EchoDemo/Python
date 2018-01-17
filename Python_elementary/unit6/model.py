@@ -18,7 +18,7 @@ model.make_pizza(16,'pepperoni')
 model.make_pizza(12,'mushroom','green peppers','extra cheese')
 
 
-#3、导入特定的函数：
+#3、导入特定的函数：导入函数之后就可以直接调用函数了：function_name()
 
 #from module_name import function_name #导入特定函数
 
