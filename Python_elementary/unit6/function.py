@@ -86,3 +86,36 @@ def average(*args):
 print average()
 print average(1,2)
 print average(1,2,2,3,4)
+
+
+#7、传递列表：
+def greet_users(names):
+	for name in names:
+		message='Hello,'+name.title()+"!"
+		print(message)
+
+usernames=['hannah','ty','margot']
+greet_users(usernames)
+
+
+#8、在函数中修改列表：
+def print_model(unprinted_designs,completed_models):
+	while unprinted_designs:
+		current_design=unprinted_designs.pop()
+		print("Printing model:"+current_design)
+		completed_models.append(current_design)
+
+def show_completed_models(completed_models):
+	print("\nFollowing models have been printed:")
+	for completed_model in completed_models:
+		print(completed_model)
+
+unprinted_designs=['iphone case','robor pendant','dodecahefron']
+completed_models=[]
+
+print_model(unprinted_designs,completed_models)
+show_completed_models(completed_models)
+
+
+#9、通过传递列表的副本(切片法)而不是原件来达到不修改列表：
+#function_name(list_name[:])
