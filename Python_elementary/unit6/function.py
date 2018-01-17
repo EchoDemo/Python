@@ -119,3 +119,16 @@ show_completed_models(completed_models)
 
 #9、通过传递列表的副本(切片法)而不是原件来达到不修改列表：
 #function_name(list_name[:])
+
+
+#10、当预先不知道传递给函数的会是什么样的信息，可将函数编写成能够接受任意数量的键值对。
+def build_profile(first,last,**user_info):
+	profile={}
+	profile['first_name']=first
+	profile['last_name']=last
+	for key,value in user_info.items():
+		profile[key]=value
+	return profile
+
+user_profile=build_profile('albert','einstein',location='princeton',field='physics')
+print(user_profile)
