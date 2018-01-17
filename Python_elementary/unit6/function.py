@@ -86,7 +86,7 @@ def average(*args):
 print average()
 print average(1,2)
 print average(1,2,2,3,4)
-
+#如果要让函数接受不同类型的实参，必须把在函数中接受任意数量实参的形参放在最后。
 
 #7、传递列表：
 def greet_users(names):
